@@ -24,5 +24,5 @@ During these challenges, I used different tools to get the job done:
 *   **Basic Linux commands**: `cat`, `find`, `grep`, `tar`, `7z`.
 
 ## 👤 Author
-**[Your Name]**
-Feel free to connect with me on [LinkedIn](https://linkedin.com/in/yourprofile) or [GitHub](https://github.com/yourusername).
+**[Youssef Bouyzourn]**
+Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/youssef-bouyzourn-047b4b339/) or [GitHub-2](https://github.com/youssef0600).
