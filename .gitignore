@@ -1,0 +1,11 @@
+# Mac OS
+__MACOSX/
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+# Archives
+*.zip
+*.tar.gz
