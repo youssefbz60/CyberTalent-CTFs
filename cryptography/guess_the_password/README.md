@@ -1,16 +1,32 @@
 # Guess The Password
 
-## 📝 Challenge Description
-Similar to the previous one, we have another hash to crack. 
-The hash is: `06f8aa28b9237866e3e289f18ade19e1736d809d`
+**Category:** Cryptography | **Status:** Solved
 
-## 🔍 My Approach
-1.  I counted the characters. This hash has 40 characters. This means it's a **SHA1** hash.
-2.  I used a different online tool this time to see which one is faster.
+## Challenge description
+Another leaked hash, and again the goal is to recover the password.
 
-## 🛠️ Tools Used
-*   **hashes.com**: I used this website to look up the SHA1 hash.
+```
+06f8aa28b9237866e3e289f18ade19e1736d809d
+```
 
-## 🚩 The Solution
-The website successfully reversed the SHA1 hash. 
-The password is: `jrahyn+`
+## Approach
+1. **Identify the hash.** It is 40 hexadecimal characters, which matches **SHA-1**. (RIPEMD-160 has the same length, so a tool such as `hashid` helps to double-check.)
+2. **Look it up.** I searched the hash on `hashes.com`, which has a large database of SHA-1 hashes, and it returned the plaintext.
+3. **Verify the answer** by hashing it myself:
+
+```bash
+printf 'jrahyn+' | sha1sum
+# 06f8aa28b9237866e3e289f18ade19e1736d809d  -
+```
+The output matches the challenge hash.
+
+## Solution
+Password: `jrahyn+`
+
+## Tools used
+`hashes.com`, `sha1sum`
+
+## What I learned
+- Same method as [Crack the Hash](../crack-the-hash/): identify, look up, verify.
+- SHA-1 is longer than MD5 (40 characters instead of 32), but it is just as weak against dictionary lookups when the password is simple.
+- A special character at the end of a password (`+`) does not protect it if the hash is already in a public database.

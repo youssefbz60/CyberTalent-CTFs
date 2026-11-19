@@ -1,11 +1,12 @@
 # Cryptography Challenges
 
-In this folder, I solved different cryptography challenges. They start from easy hash cracking and go up to reversing custom encryption scripts.
+These challenges start with simple hash lookups and go up to reversing custom encryption code.
 
-## Challenges:
-1.  **Crack the Hash**: Finding the plain text of an MD5 hash.
-2.  **Guess The Password**: Finding a password from a SHA1 hash.
-3.  **Arithmetic**: Reversing a math-based encryption function.
-4.  **Genfei**: Reading Python 2 encryption code and writing a script to decrypt the flag.
+| Challenge | What it is about | Status |
+|-----------|------------------|--------|
+| [Crack the Hash](./crack-the-hash/) | Identify and crack an MD5 hash | Solved |
+| [Guess The Password](./guess_the_password/) | Identify and crack a SHA-1 hash | Solved |
+| [Genfei](./genfei/) | Read Python 2 code and invert a custom block cipher | Solved |
+| [Arithmetic](./arithmetic/) | Analyse a custom cipher built from simple arithmetic | In progress |
 
-Click on any folder to read the full writeup and see the code.
+Open any folder to read the full writeup and see the code.
